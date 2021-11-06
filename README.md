@@ -28,7 +28,6 @@ An overview of the ResNet50 model:
 # Accuracy
 
 The model achieved an accuracy of 93.67% on the training dataset, 91% on the validation dataset and 89% on the test dataset which is optimum considering that the dataset was self-accumulated.
-
 </br>
 
 # Application
