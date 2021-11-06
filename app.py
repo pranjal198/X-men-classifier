@@ -3,13 +3,13 @@ import tensorflow as tf
 import streamlit as st
 
 st.set_page_config(
-    page_title='Find yout X-men',
+    page_title='Find your X-men',
     page_icon='icon.png'
 )
 
 st.image('icon.png', width=600)
 st.title('Find your X-men')
-st.subheader("Just upload an image file and find which X-men it is")
+st.subheader("Upload an image and find which X-men character it contains")
 st.set_option('deprecation.showfileUploaderEncoding', False)
 @st.cache(allow_output_mutation=True)
 def load_model():
@@ -39,7 +39,7 @@ def import_and_predict(image_data, model):
         
         return prediction
     
-file = st.file_uploader("Please upload an image file"jpg", "png"])
+file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
 class_btn = st.button("CLASSIFY!!")
 if file is not None:
         image = Image.open(file)
@@ -52,9 +52,9 @@ if class_btn:
         class_names=['Angel','Beast','Cyclops', 'Iceman', 'Magneto', 'Mystique', 'Phoenix', 'Professor X', 'Storm', 'Wolverine']
         string="This image is most likely: "+class_names[np.argmax(prediction)]
         st.success(string)
-         
+        
 st.image('bottom.jpg')
 st.markdown('''
     *Built with :heart: by [Pranjal Singh](https://github.com/Pranjal198).*
-*Show some love to this project by starring and sharing the repository on [GitHub](https://github.com/GunjanDhanuka/PokeDex_Classifier) !*
+*Show some love to this project by starring and sharing the repository on [GitHub](https://github.com/Pranjal198/X-men-classifier) !*
     ''')
