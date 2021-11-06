@@ -47,6 +47,7 @@ For making the use of my model easy and convenient I made a simple app using the
 <strong><em>Your suggestions and criticisms are welcome, Don't forget to share this with your friends and star the repository</em></strong>.
 
 </br>
+</br>
 
 ![bottom](/bottom.jpg)
 
