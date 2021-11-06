@@ -33,9 +33,10 @@ The model achieved an accuracy of 93.67% on the training dataset, 91% on the val
 # Application
 
 For making the use of my model easy and convenient I made a simple app using the [Streamlit Framework](https://streamlit.io/) and also deployed it using [Streamlit Share](https://share.streamlit.io/) for sharing it with my friends.
-
 </br>
+
 # Scope
+
 1) Expanding the dataset to increase the number of characters.
 2) Improving the UI of the application.
 
