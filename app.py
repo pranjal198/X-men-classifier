@@ -1,5 +1,7 @@
 import streamlit as st
 import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.models import load_model
 import streamlit as st
 
 st.set_page_config(
@@ -11,12 +13,12 @@ st.image('icon.png', width=600)
 st.title('Find your X-men')
 st.subheader("Upload an image and find which X-men character it contains")
 st.set_option('deprecation.showfileUploaderEncoding', False)
-@st.cache(allow_output_mutation=True)
-def loading_model():
-  model=tf.keras.models.load_model("final.h5")
-  return model
-with st.spinner('Model is being loaded..'):
-  model=loading_model()
+# @st.cache(allow_output_mutation=True)
+# def loading_model():
+#   model=tf.keras.models.load_model("final.h5")
+#   return model
+# with st.spinner('Model is being loaded..'):
+model=load_model("final.h5")
 
 
 
