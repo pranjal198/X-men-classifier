@@ -30,9 +30,9 @@ An overview of the ResNet50 model:
 The model achieved an accuracy of 93.67% on the training dataset, 91% on the validation dataset and 89% on the test dataset which is optimum considering that the dataset was self-accumulated.
 </br>
 
-# Application
+# App
 
-For making the use of my model easy and convenient I made a simple app using the [Streamlit Framework](https://streamlit.io/) and also deployed it using [Streamlit Share](https://share.streamlit.io/) for sharing it with my friends.
+For making the use of my model easy and convenient I made a simple applcation using the [Streamlit Framework](https://streamlit.io/) and also deployed it using [Streamlit Share](https://share.streamlit.io/) for sharing it with my friends.
 </br>
 
 # Scope
