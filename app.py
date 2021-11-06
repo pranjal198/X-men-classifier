@@ -9,9 +9,24 @@ st.set_page_config(
     page_icon='icon.png'
 )
 
-st.image('icon.png', width=600)
+st.image('icon.png')
 st.title('Find your X-men')
 st.subheader("Upload an image and find which X-men character it contains")
+st.markdown('''
+    Currently this app best recognises 10 characters:-
+    Angel,
+    Beast,
+    Cyclops,
+    Iceman,
+    Magneto,
+    Mystique,
+    Phoenix,
+    Professor X,
+    Storm and
+    Wolverine
+
+    But feel free to upload any fun images you like.
+    ''')
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # @st.cache(allow_output_mutation=True)
 # def loading_model():
@@ -55,9 +70,11 @@ if class_btn:
         class_names=['Angel','Beast','Cyclops', 'Iceman', 'Magneto', 'Mystique', 'Phoenix', 'Professor X', 'Storm', 'Wolverine']
         string="This image is most likely: "+class_names[np.argmax(prediction)]
         st.success(string)
-        
+st.markdown('''
+    This model uses Transfer learning from the ResNet50 model to classify the images into classes.
+    ''')        
 st.image('bottom.jpg')
 st.markdown('''
     *Built with :heart: by [Pranjal Singh](https://github.com/Pranjal198).*
-*Show some love to this project by starring and sharing the repository on [GitHub](https://github.com/Pranjal198/X-men-classifier) !*
+*If you like the project do star and share the repository on [GitHub](https://github.com/Pranjal198/X-men-classifier) !*
     ''')
