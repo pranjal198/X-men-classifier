@@ -10,7 +10,6 @@ st.set_page_config(
 )
 
 st.image('icon.png')
-st.title('Find your X-men')
 st.subheader("Upload an image and find which X-men character it contains")
 st.markdown('''
     Currently this app best recognises 10 characters:-
